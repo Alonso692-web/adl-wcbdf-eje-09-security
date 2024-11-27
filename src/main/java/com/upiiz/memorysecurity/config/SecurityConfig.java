@@ -95,7 +95,7 @@ public class SecurityConfig {
         userDetailsList.add(usuarioMiguel);
         userDetailsList.add(usuarioRodrigo);
         userDetailsList.add(usuarioInvitado);
-        return new InMemoryUserDetailsManager();
+        return new InMemoryUserDetailsManager(userDetailsList);
     }
 
 }
